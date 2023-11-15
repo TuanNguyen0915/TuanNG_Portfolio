@@ -1,10 +1,15 @@
 nav {
-    width: 100%;
     min-height: 4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgba(0, 0, 0, .1);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background: rgba(0, 0, 0, .2); */
+    backdrop-filter: blur(10px);
 }
 
 .navBarLogo {
@@ -12,25 +17,32 @@ nav {
     width: 40%;
 }
 
-.navBarElements {
-    padding-right: 2rem;
-    display: flex;
-
-}
-
-
-.navBarElements li {
-    margin: 0 1rem;
-    font-size: 1rem;
-}
-
-
-.navBarElements a {
-    font-weight: 800;
-    text-transform: uppercase;
+.navBarLogo:hover {
+    width: 50%;
     transition: .5s;
 }
 
+.navBarElements {
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navBarElements li {
+    height: 100%;
+    margin: 0 1rem;
+}
+
+.navBarElements a {
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: .3s;
+    color: #6289d2;
+}
+
 .navBarElements a:hover {
-    color: #464CBE;
+    font-size: 1.5rem;
+    color: #202592;
 }
