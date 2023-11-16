@@ -1,9 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: none;
+    background: none;
 }
-
 
 ul {
     list-style: none;
@@ -15,6 +14,42 @@ a {
 
 h1,
 h2,
-a {
-    color: #444;
+a,
+p {
+    color: #333;
 }
+
+.btn,
+.btn-light {
+    margin-top: 1rem;
+    min-width: 8rem;
+    padding: .5rem 1rem;
+    background: #464CBE;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #464CBE;
+    color: whitesmoke;
+    transition: .5s;
+    font-size: 1.5rem;
+}
+
+.btn-light {
+    background: none;
+    color: black;
+}
+
+.btn:hover,
+.btn:active {
+    border: 1px solid #464CBE;
+    color: #64e687;
+    background-color: #042257;
+    border: 1px solid #042257;
+    box-shadow: 0 .5rem 1rem #222;
+    transform: translate(2rem, -.5rem);
+}
+
+.btn-light:hover,
+.btn-light:active {
+    transform: translate(-2rem, -.5rem);
+}
+

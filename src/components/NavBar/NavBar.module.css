@@ -8,41 +8,41 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    /* background: rgba(0, 0, 0, .2); */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
+    /* background: #fbfaf9; */
 }
 
 .navBarLogo {
-    padding-left: 2rem;
     width: 40%;
-}
-
-.navBarLogo:hover {
-    width: 50%;
     transition: .5s;
 }
 
-.navBarElements {
-    padding-right: 2rem;
-    display: flex;
-    justify-content: center;
+.navBarLogo:hover,
+.navBarLogo:active {
+    width: 50%;
+}
 
+
+.navBarElements {
+    display: flex;
+    padding-right: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .navBarElements li {
-    height: 100%;
     margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 100%;
 }
 
 .navBarElements a {
-    font-weight: 800;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    transition: .3s;
     color: #6289d2;
+    transition: .5s;
 }
 
 .navBarElements a:hover {
-    font-size: 1.5rem;
     color: #202592;
+    font-size: 1.7rem;
 }
