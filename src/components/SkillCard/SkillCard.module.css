@@ -1,0 +1,87 @@
+.skillCard {
+    width: 28%;
+    perspective: 1000px;
+    position: relative;
+    height: 425px;
+    min-height: 400px;
+    margin: 4rem 1rem;
+}
+
+.frontCard,
+.backCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 12px;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 600ms;
+    /* border: 1px solid #1b73e8; */
+    box-shadow: 0 .5rem 1rem gray;
+}
+
+.frontCard {
+    font-size: 1.5rem;
+    font-weight: 800;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.frontCard p {
+    margin-top: 2rem;
+    color: #464CBE;
+}
+
+.frontCard:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.frontIMG {
+    width: 20%;
+}
+
+.skillCard:hover .frontCard,
+.skillCard:active .frontCard {
+    transform: rotateY(-180deg);
+}
+
+.backCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    transform: rotateY(180deg);
+}
+
+.backCard p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.6;
+    margin-left: 20%;
+}
+
+.backCard .itemSpan {
+    margin-left: 1rem;
+}
+
+.backCard .backIcon {
+    color: #464CBE;
+    transform: translateY(5px);
+}
+
+.skillCard:hover .backCard,
+.skillCard:active .backCard {
+    transform: rotateY(0deg);
+}

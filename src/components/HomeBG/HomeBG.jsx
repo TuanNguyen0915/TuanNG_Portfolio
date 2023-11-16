@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import { HashLink } from "react-router-hash-link";
 import { FaCloudDownloadAlt, FaAngleDoubleDown } from "react-icons/fa";
 
 // css
@@ -7,15 +8,16 @@ import styles from './HomeBG.module.css'
 
 import myPic from '../../assets/images/myPic_tran.png'
 import smoke from '../../assets/images/smoke.png'
+import picCircle from '../../assets/images/pic_circle.jpeg'
 
 const HomeBG = () => {
     return (
         <div>
             <div className={styles.homeContainer}>
                 <div className={styles.leftContainer}>
-                    <h1>Hello! I'm</h1>
-                    <h1 className={styles.myName}>Tuan Nguyen</h1>
-                    <h2>Fullstack Developer</h2>
+                    <img className={styles.picCircle} src={picCircle} alt="my-img" />
+                    <h1>Hello! I'm Tuan Nguyen</h1>
+                    <h2>I'm a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions. Carefulness and responsibility are two skills I learned while working in my previous career, which helped me approach SWE more easily, and work more efficiently. I am interested in technology and techniques in the full-stack development field to keep my passion for it.</h2>
                     <div className={styles.homeBtn}>
                         <NavLink to='/project' className='btn'>
                             Project
@@ -32,7 +34,9 @@ const HomeBG = () => {
             </div>
             {/* Narrow */}
             <div className={styles.narrow}>
-                <FaAngleDoubleDown className={styles.FaAngleDoubleDown} />
+                <HashLink smooth to='#TuanSkills'>
+                    <FaAngleDoubleDown className={styles.FaAngleDoubleDown} />
+                </HashLink>
             </div>
         </div>
     )

@@ -24,10 +24,12 @@ p {
     margin-top: 1rem;
     min-width: 8rem;
     padding: .5rem 1rem;
-    background: #464CBE;
+    /* background: #464CBE; */
+    background: #1b73e8;
     text-align: center;
-    border-radius: 12px;
-    border: 1px solid #464CBE;
+    border-radius: 8px;
+    /* border: 1px solid #464CBE; */
+    border: 1px solid #1b73e8;
     color: whitesmoke;
     transition: .5s;
     font-size: 1.5rem;
@@ -35,7 +37,7 @@ p {
 
 .btn-light {
     background: none;
-    color: black;
+    color: #1b73e8;
 }
 
 .btn:hover,

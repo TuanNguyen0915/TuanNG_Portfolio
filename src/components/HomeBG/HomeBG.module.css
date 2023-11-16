@@ -1,11 +1,11 @@
 .homeContainer {
     /* margin-top: 4rem; */
     /* background: #fbfaf9; */
-    background: #ebe5e5;
+    background: #fafafa;
 
     width: 100%;
     /* height: calc(100vh - 4rem); */
-    height: 90vh;
+    height: 84vh;
     display: flex;
     justify-content: space-between;
 }
@@ -19,20 +19,28 @@
     line-height: 1.5;
 }
 
+.picCircle {
+    margin: 5rem 0;
+    width: 30%;
+    border-radius: 50%;
+}
+
 .leftContainer h1 {
-    font-size: 5rem;
-    color: #464CBE;
-    letter-spacing: 2px;
+    font-size: 3rem;
+    /* color: #464CBE; */
+    color: #1b73e8;
 }
 
 .leftContainer h2 {
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: justify;
 }
 
 .FaAngleDoubleDown {
     font-size: 2rem;
-    color: #464CBE;
+    /* color: #464CBE; */
+    color: #1b73e8;
 }
 
 .homeBtn {
@@ -74,10 +82,20 @@
     justify-content: center;
     align-items: center;
     min-height: 10vh;
-    background: #ebe5e5;
+    background: #fafafa;
 }
-.FaAngleDoubleDown{
+
+.FaAngleDoubleDown {
     animation: upDown 2s ease infinite;
+    transition: 1s;
+}
+
+
+.FaAngleDoubleDown:hover,
+.FaAngleDoubleDown:active {
+    color: black;
+    opacity: .8;
+    font-size: 4rem;
 }
 
 /* KEYFRAMES */

@@ -1,15 +1,10 @@
 nav {
-    min-height: 4rem;
+    height: 6vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+    
     z-index: 5;
-    top: 0;
-    left: 0;
-    right: 0;
-    backdrop-filter: blur(4px);
-    /* background: #fbfaf9; */
 }
 
 .navBarLogo {
@@ -19,7 +14,7 @@ nav {
 
 .navBarLogo:hover,
 .navBarLogo:active {
-    width: 50%;
+    transform: translateX(2rem);
 }
 
 
@@ -37,12 +32,20 @@ nav {
     width: 100%;
 }
 
+.navBarElements li:hover {
+    transform: translateY(-.3rem);
+    border-bottom: 2px solid #202592;
+}
+
 .navBarElements a {
-    color: #6289d2;
+    /* color: #6289d2; */
+    color: #1b73e8;
+    text-transform: uppercase;
     transition: .5s;
 }
 
-.navBarElements a:hover {
+.navBarElements a:hover,
+.navBarElements a:active {
     color: #202592;
     font-size: 1.7rem;
 }
