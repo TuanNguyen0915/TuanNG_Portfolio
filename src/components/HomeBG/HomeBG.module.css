@@ -27,13 +27,14 @@
 
 .leftContainer h1 {
     font-size: 3rem;
-    /* color: #464CBE; */
+    text-transform: uppercase;
+    font-weight: 800;
     color: #1b73e8;
 }
 
 .leftContainer h2 {
-    font-size: 1.2rem;
-    font-weight: 200;
+    font-size: 1.4rem;
+    font-weight: 800;
     text-align: justify;
 }
 
@@ -44,7 +45,7 @@
 }
 
 .homeBtn {
-    width: 80%;
+    width: 100%;
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
@@ -74,7 +75,8 @@
     opacity: .6;
     transform: translate(20%, 15%);
     z-index: -2;
-    animation: smokeChange 5s ease alternate infinite;
+    /* animation: smokeChange 5s ease alternate infinite; */
+    animation: smokeChange 3s linear .1s infinite;
 }
 
 .narrow {

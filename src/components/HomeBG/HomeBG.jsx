@@ -16,8 +16,9 @@ const HomeBG = () => {
             <div className={styles.homeContainer}>
                 <div className={styles.leftContainer}>
                     <img className={styles.picCircle} src={picCircle} alt="my-img" />
-                    <h1>Hello! I'm Tuan Nguyen</h1>
-                    <h2>I'm a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions. Carefulness and responsibility are two skills I learned while working in my previous career, which helped me approach SWE more easily, and work more efficiently. I am interested in technology and techniques in the full-stack development field to keep my passion for it.</h2>
+                    <h1>Hi, I'm </h1>
+                    <h1>Tuan Nguyen</h1>
+                    <h2>I'm a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions.</h2>
                     <div className={styles.homeBtn}>
                         <NavLink to='/project' className='btn'>
                             Project

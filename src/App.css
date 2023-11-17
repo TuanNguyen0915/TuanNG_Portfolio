@@ -4,6 +4,9 @@
     background: none;
 }
 
+html {
+    background: #f5f4f6;
+}
 ul {
     list-style: none;
 }
@@ -33,6 +36,7 @@ p {
     color: whitesmoke;
     transition: .5s;
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .btn-light {
