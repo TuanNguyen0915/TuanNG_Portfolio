@@ -1,7 +1,8 @@
 import SkillCard from '../SkillCard/SkillCard'
 import styles from './SkillsBoard.module.css'
-
-import skillsSet from '../../data/data.js'
+import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
+import { HashLink } from 'react-router-hash-link';
+import { skillsSet } from '../../data/data'
 
 const SkillsBoard = () => {
     return (
@@ -16,6 +17,14 @@ const SkillsBoard = () => {
                 {skillsSet.map(skill => (
                     <SkillCard key={skill} skill={skill} />
                 ))}
+            </div>
+            <div className={styles.narrow}>
+                <HashLink smooth to='#projects'>
+                    <FaAngleDoubleDown className={styles.FaAngleDoubleDown} />
+                </HashLink>
+                <HashLink smooth to='#homepage'>
+                    <FaAngleDoubleUp className={styles.FaAngleDoubleUp} />
+                </HashLink>
             </div>
         </main>
     )

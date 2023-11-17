@@ -13,7 +13,7 @@ import picCircle from '../../assets/images/pic_circle.jpeg'
 const HomeBG = () => {
     return (
         <div>
-            <div className={styles.homeContainer}>
+            <div className={styles.homeContainer} id="homepage">
                 <div className={styles.leftContainer}>
                     <img className={styles.picCircle} src={picCircle} alt="my-img" />
                     <h1>Hi, I'm </h1>

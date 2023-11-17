@@ -7,11 +7,8 @@ const Home = () => {
     return (
         <main>
             <NavBar />
-
             <HomeBG />
-
             <SkillsBoard />
-
             <Projects />
         </main>
     )
