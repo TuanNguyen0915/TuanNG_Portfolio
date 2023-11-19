@@ -10,7 +10,7 @@
 }
 
 .infoDecs {
-    width: 60%;
+    width: 80%;
     text-align: justify;
     line-height: 1.6;
 }
@@ -28,6 +28,7 @@
 }
 
 .infoDecs h2 {
+    text-transform: uppercase;
     padding-top: 4rem;
     font-weight: 800;
 }

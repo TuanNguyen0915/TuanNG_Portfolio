@@ -35,7 +35,7 @@
     flex-wrap: wrap;
 }
 
-.narrow {
+/* .narrow {
     margin-top: 0;
     display: flex;
     justify-content: center;
@@ -90,4 +90,4 @@
     100% {
         transform: translateY(1rem);
     }
-}
+} */

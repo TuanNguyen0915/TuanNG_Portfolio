@@ -1,0 +1,76 @@
+.container {
+    width: 100%;
+}
+
+.header {
+    /* background: gray; */
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.headerDecs {
+    width: 80%;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.header h1 {
+    font-size: 5rem;
+    font-family: 800;
+}
+
+.header p,
+.header h2 {
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: 400;
+}
+
+.header h2 {
+    padding-top: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.formContainer {
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 1rem #999;
+}
+
+.formContainer .leftSide {
+    width: 60%;
+    margin-right: 1rem;
+}
+
+.formContainer .leftSide p {
+    margin: 1rem;
+    color: gray;
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 1.4;
+}
+.formContainer .rightSide {
+    margin: 1rem;
+    width: 40%;
+}
+
+
+.formControl {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem 1rem 0;
+}
+
+.formControl input, .formControl textarea {
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.1);
+    border: none;
+}

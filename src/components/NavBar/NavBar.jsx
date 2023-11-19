@@ -1,5 +1,5 @@
 // node packages
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link'
 // css
 import styles from './NavBar.module.css'
 // logo
@@ -11,23 +11,23 @@ const NavBar = () => {
     return (
         <nav>
             <div>
-                <NavLink to='/'>
+                <HashLink smooth to='/'>
                     <img src={TuanSign} alt="TuanNG" className={styles.navBarLogo} />
-                </NavLink>
+                </HashLink>
             </div>
             <div>
                 <ul className={styles.navBarElements}>
                     <li>
-                        <NavLink to='/'>Home</NavLink>
+                        <HashLink smooth to='/'>Home</HashLink>
                     </li>
                     <li>
-                        <NavLink to='project'>Project</NavLink>
+                        <HashLink smooth to='#aboutMe'>About</HashLink>
                     </li>
                     <li>
-                        <NavLink to='/about'>About</NavLink>
+                        <HashLink smooth to='#projects'>Project</HashLink>
                     </li>
                     <li>
-                        <NavLink to='/contact'>Contact</NavLink>
+                        <HashLink smooth to='/contact'>Contact</HashLink>
                     </li>
                 </ul>
             </div>
@@ -52,16 +52,16 @@ export default NavBar
 //             <div>
 //                 <ul className={styles.navBarElements}>
 //                     <li>
-//                         <NavLink to='/'>Home</NavLink>
+//                         <HashLink to='/'>Home</HashLink>
 //                     </li>
 //                     <li>
-//                         <NavLink to='/project'>Project</NavLink>
+//                         <HashLink to='/project'>Project</HashLink>
 //                     </li>
 //                     <li>
-//                         <NavLink to='/about'>About</NavLink>
+//                         <HashLink to='/about'>About</HashLink>
 //                     </li>
 //                     <li>
-//                         <NavLink to='/contact'>Contact</NavLink>
+//                         <HashLink to='/contact'>Contact</HashLink>
 //                     </li>
 //                 </ul>
 //             </div>

@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import styles from './Projects.module.css'
 import ProjectCard from '../ProjectCard/ProjectCard'
-
+import { HashLink } from 'react-router-hash-link'
+import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
 import { myProjects } from '../../data/data.js'
 
 const Projects = () => {
@@ -11,7 +12,6 @@ const Projects = () => {
     const handleOnClick = (currId) => {
         setActive(currId)
     }
-    console.log(active);
 
     return (
         <main className={styles.projectsMain} id='projects'>
@@ -33,6 +33,14 @@ const Projects = () => {
                         handleOnClick={handleOnClick}
                     />
                 ))}
+            </div>
+            <div className='arrow'>
+                <HashLink smooth to='#contact'>
+                    <FaAngleDoubleDown className='FaAngleDoubleDown' />
+                </HashLink>
+                <HashLink smooth to='#aboutMe'>
+                    <FaAngleDoubleUp className='FaAngleDoubleUp' />
+                </HashLink>
             </div>
         </main >
     )

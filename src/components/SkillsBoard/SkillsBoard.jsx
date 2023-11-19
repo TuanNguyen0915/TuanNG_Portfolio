@@ -6,7 +6,7 @@ import { skillsSet } from '../../data/data'
 
 const SkillsBoard = () => {
     return (
-        <main className={styles.skillsSection} id='TuanSkills'>
+        <main className={styles.skillsSection} id='aboutMe'>
             {/* <h1>Dive into Tuan's ToolsBox</h1> */}
             <div className={styles.infoDecs}>
                 <h2>INTRODUCTION</h2>
@@ -18,12 +18,12 @@ const SkillsBoard = () => {
                     <SkillCard key={skill} skill={skill} />
                 ))}
             </div>
-            <div className={styles.narrow}>
+            <div className='arrow'>
                 <HashLink smooth to='#projects'>
-                    <FaAngleDoubleDown className={styles.FaAngleDoubleDown} />
+                    <FaAngleDoubleDown className='FaAngleDoubleDown' />
                 </HashLink>
                 <HashLink smooth to='#homepage'>
-                    <FaAngleDoubleUp className={styles.FaAngleDoubleUp} />
+                    <FaAngleDoubleUp className='FaAngleDoubleUp' />
                 </HashLink>
             </div>
         </main>
