@@ -47,7 +47,7 @@ p {
 
 .btn:hover,
 .btn:active {
-    border: 1px solid #464CBE;
+    /* border: 1px solid #464CBE; */
     color: #64e687;
     background-color: #042257;
     border: 1px solid #042257;

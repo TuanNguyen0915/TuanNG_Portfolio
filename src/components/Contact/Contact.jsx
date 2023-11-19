@@ -1,8 +1,10 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import styles from './Contact.module.css'
-
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+  const formRef = useRef()
+  
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -18,8 +20,33 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true)
-
+    emailjs.send(
+      'service_7tifjfg', //service id
+      'template_448rt5s',// template id
+      {
+        name: form.name,
+        email: form.email,
+        message: form.message
+      },
+      'Lpi7KZhy99lKg8tG_' // my public key
+    ).then(
+      () => {
+        setLoading(false)
+        alert('Thank you. I will get back to you as soon as possible.')
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        })
+      },
+      (error) => {
+        setLoading(false)
+        console.log(error);
+        alert('Something went wrong. Please try again.')
+      }
+    )
   }
+
   return (
     <section>
       <div className={styles.container} id="contact">
@@ -37,7 +64,11 @@ const Contact = () => {
             </p>
           </div>
           <div className={styles.rightSide}>
-            <form action="" className={styles.formControl} onSubmit={handleSubmit}>
+            <form
+              ref={formRef}
+              className={styles.formControl}
+              onSubmit={handleSubmit}
+            >
               <input
                 type="text" placeholder="Your Full Name"
                 value={form.name} name="name"
@@ -45,19 +76,20 @@ const Contact = () => {
                 autoComplete="off"
               />
               <input
-                type="text" placeholder="Your Email"
+                type="email" placeholder="Your Email"
                 value={form.email} name="email"
                 required onChange={handleChange}
                 autoComplete="off"
-
               />
               <textarea
                 rows="6" placeholder="Your Message"
                 value={form.message} name='message'
                 required onChange={handleChange}
                 autoComplete="off"
-
               />
+              <button className={styles.btnSubmit}>
+                {loading ? 'Sending' : 'Send'}
+              </button>
             </form>
           </div>
         </div>
